@@ -15,6 +15,7 @@ code {
 body {
   text-align: center;
   margin: 20%;
+  background-color: #F9F9F9;
 }
 
 h1 {
@@ -23,5 +24,30 @@ h1 {
 
 label,
 button {
-  margin: 2.5%;
+  margin: 2.0%;
+}
+
+input, button{
+  appearance: none;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #111;
+  color: #111;
+  padding: 0px 8px;
+}
+
+button{
+  background-color: #111;
+  color: whitesmoke;
+  cursor: pointer;
+  height: 31px;
+  width: 60px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0 50px #f9f9f9 inset;
+  -webkit-text-fill-color: #111
 }

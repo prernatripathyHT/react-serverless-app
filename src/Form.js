@@ -26,14 +26,19 @@ export default class Form extends Component {
     await axios.post(
       'https://r04tpk7ag5.execute-api.ap-south-1.amazonaws.com/default/',
       { key1: `${name}, ${message}` }
-    );
+    ).then(function(res){
+      console.log("response: ", res);
+      if(res.status == 200){
+        alert("Thankyou! Your data is submitted.")
+      }
+    });
   }
 
   render() {
     return (
       <div>
-        hello from github
-        <form onSubmit={this.handleSubmit}>
+        <h4>Hello from github</h4>
+        <form onSubmit={this.handleSubmit} className="form">
           <label>Name:</label>
           <input
             type="text"
