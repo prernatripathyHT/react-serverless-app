@@ -5,8 +5,8 @@ export default class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      message: '',
+      name: 'gh-test',
+      message: 'gh-test',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
